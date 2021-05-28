@@ -1,0 +1,146 @@
+#Main-Game {
+  width: 100%;
+  height: 937px;
+  background-color: #1E1E1E;
+}
+#Main-Game .title {
+  padding-top: 50px;
+}
+#Main-Game .title h1 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 45px;
+}
+#Main-Game .Game-lobby h2 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+#Main-Game .Game-lobby .options {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 200px;
+}
+#Main-Game .Game-lobby .options img {
+  display: block;
+  width: 300px;
+  border: 8px solid #fff;
+  border-radius: 100%;
+  transition: all 300ms;
+  cursor: pointer;
+}
+#Main-Game .Game-lobby .options img:hover {
+  box-shadow: 0px 0px 30px #ccc;
+}
+#Main-Game .Game-result {
+  margin-top: 120px;
+  display: none;
+}
+#Main-Game .Game-result .Result {
+  display: flex;
+  justify-content: space-evenly;
+}
+#Main-Game .Game-result .Result .box img {
+  display: block;
+  width: 300px;
+  border: 8px solid #fff;
+  border-radius: 100%;
+}
+#Main-Game .Game-result .Result .box p {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#Main-Game .Game-result p {
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+#Main-Game .Game-result .ganaste {
+  color: #35dd17;
+}
+#Main-Game .Game-result .perdiste {
+  color: #c51b1b;
+}
+#Main-Game .Game-result .empate {
+  color: #2475c0;
+}
+#Main-Game .Game-result #reset {
+  display: block;
+  width: 250px;
+  margin: 0px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  transition: all 300ms;
+  cursor: pointer;
+}
+#Main-Game .Game-result #reset:hover {
+  box-shadow: 0px 0px 10px #ccc;
+  transform: scale(1.03, 1.03);
+}
+
+@media (max-width: 1040px) {
+  #Main-Game {
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+  #Main-Game .Game-lobby .options img {
+    width: 200px;
+  }
+}
+@media (max-width: 754px) {
+  #Main-Game {
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+  #Main-Game .Game-result .Result .box img {
+    width: 200px;
+  }
+}
+@media (max-width: 738px) {
+  #Main-Game {
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+  #Main-Game .Game-lobby .options {
+    display: block;
+    margin-top: 70px;
+  }
+  #Main-Game .Game-lobby .options img {
+    width: 200px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 510px) {
+  #Main-Game {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  #Main-Game .Game-result .Result {
+    display: block;
+  }
+  #Main-Game .Game-result .Result .box {
+    width: 218px;
+    margin: 0px auto;
+  }
+  #Main-Game .Game-result .Result .box img {
+    width: 200px;
+  }
+}
+@media (max-width: 396px) {
+  #Main-Game {
+    min-height: auto;
+    padding-bottom: 90px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

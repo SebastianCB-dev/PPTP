@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras | Game</title>
+    <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="src/css/estilos.css">
+
+</head>
+
+<body>
+    <section id="Main-Game">
+        <div class="title">
+            <h1>Piedra, Papel o Tijeras.</h1>
+        </div>
+        <div class="Game-lobby">
+            <h2 class="text-Options">Selecciona una de las opciones: </h2>
+            <div class="options">
+                <img src="assets/imgs/Papel.png" onclick="playGame('Papel');">
+                <img src="assets/imgs/Piedra.png" onclick="playGame('Piedra');">
+                <img src="assets/imgs/Tijera.png" onclick="playGame('Tijera');">
+            </div>
+        </div>
+        <div class="Game-result">
+            <div class="Result">
+                <div class="box">
+                    <img src="assets/imgs/Papel.png" id="Selection-player">
+                    <p>Tu selección</p>
+                </div>
+                <div class="box">
+                    <img src="assets/imgs/Papel.png" id="Selection-Machine">
+                    <p>Selección Maquina</p>
+                </div>
+            </div>
+            <p id="status-game"></p>
+            <button id="reset">Volver a Jugar</button>
+        </div>
+    </section>
+
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
